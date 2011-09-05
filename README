@@ -1,0 +1,10 @@
+# CljPerceptron
+
+An implementation of perceptrons in Clojure developed as a way to learn/explore Clojure.
+
+## Usage
+See tests for usage examples
+
+Copyright (C) 2011 Andrew Kovacs
+
+Distributed under the Eclipse Public License, the same as Clojure.
