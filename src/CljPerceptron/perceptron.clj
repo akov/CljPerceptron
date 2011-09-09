@@ -10,7 +10,7 @@ it is created with a bias, a series of weights for its inputs, and an activation
   (with-meta 
     (fn perceptron [x]
       (if
-        (< (abs (- (+ (dot-product weights x) bias) threshold)) err-margin)
+        (> (- (+ (dot-product weights x) bias) threshold) err-margin)
         1
         0))
     {:bias bias

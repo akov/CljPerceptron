@@ -16,9 +16,7 @@
                                     (+ w (* learning-rate error x)))) weights input)
        new-p (make-perceptron (get (meta p) :bias) new-weights (get (meta p) :threshold))]
     (do
-      (println error)
-      (println new-weights)
-    (recur new-p (rest learning-set) learning-rate))
-      
-     )))
+      ;(println error)
+      ;(println new-weights)
+    (recur new-p (rest learning-set) learning-rate)))))
 
